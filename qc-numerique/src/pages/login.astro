@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login | Quebec Numérique</title>
+        <link rel="stylesheet" href="/styles/login.css" />
+        <script
+            src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"
+        ></script>
+        <script
+            src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"
+        ></script>
+    </head>
+    <body>
+        <div class="login-container">
+            <h1>Quebec Numérique</h1>
+            <form id="login-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Compiled JavaScript (from TypeScript) -->
+        <script src="../../public/script/login.ts" defer></script>
+    </body>
+</html>

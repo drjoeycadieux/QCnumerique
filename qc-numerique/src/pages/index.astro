@@ -1,0 +1,119 @@
+---
+import Alerte from "../../components/Alerte.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Quebec Numérique</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			a {
+				color: lightgray;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			body {
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				line-height: 1.6;
+				background-color: #f4f4f9;
+				color: #333;
+			}
+
+			header {
+				background-color: #004080;
+				color: white;
+				padding: 20px 40px;
+				text-align: center;
+			}
+
+			nav {
+				margin-top: 10px;
+			}
+
+			nav a {
+				color: white;
+				text-decoration: none;
+				margin: 0 15px;
+				font-weight: bold;
+			}
+
+			.hero {
+				background: url("https://images.unsplash.com/photo-1529101091764-c3526daf38fe?auto=format&fit=crop&w=1350&q=80")
+					no-repeat center center/cover;
+				color: white;
+				text-align: center;
+				padding: 100px 20px;
+			}
+
+			.hero h1 {
+				font-size: 3rem;
+				margin-bottom: 20px;
+			}
+
+			section.about {
+				padding: 40px 20px;
+				max-width: 1000px;
+				margin: auto;
+			}
+
+			.about h2 {
+				font-size: 2rem;
+				color: #004080;
+				margin-bottom: 20px;
+			}
+
+			footer {
+				background-color: #004080;
+				color: white;
+				text-align: center;
+				padding: 20px;
+				margin-top: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<Alerte />
+		<header>
+			<h1>Québec Numérique</h1>
+			<nav>
+				<a href="/">Accueil</a>
+				<a href="propos">À propos</a>
+				<a href="evenements">Événements</a>
+				<a href="contact">Contact</a>
+				<a href="/login">Connexion</a>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<h1>Le Futur Numérique du Québec</h1>
+			<p>Innovation. Technologie. Collaboration.</p>
+		</section>
+
+		<section class="about">
+			<h2>À propos de Québec Numérique</h2>
+			<p>
+				Québec Numérique est un organisme dédié à la transformation
+				numérique de la société québécoise. Nous créons des opportunités
+				de développement, des événements technologiques et des
+				ressources pour stimuler l’innovation et la collaboration dans
+				tout le Québec.
+			</p>
+		</section>
+
+		<footer>
+			<p>&copy; 2025 Québec Numérique. Tous droits réservés.</p>
+			<a href="https://www.facebook.com">Facebook</a> |
+			<a href="https://twitter.com">Twitter</a> |
+			<a href="mailto:joeycadieux161@gmail.com">Courriel</a>
+		</footer>
+	</body>
+</html>

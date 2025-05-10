@@ -1,0 +1,78 @@
+:root {
+    --primary: #004080;
+    --secondary: #f4f4f9;
+    --text: #222;
+    --card-bg: #ffffff;
+    --card-hover: #f0f8ff;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: var(--secondary);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.dashboard-header {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+}
+
+#logout-btn {
+    background-color: white;
+    color: var(--primary);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dashboard-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: var(--card-hover);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.card a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary);
+    color: white;
+    margin-top: 40px;
+}

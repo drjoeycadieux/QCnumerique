@@ -1,0 +1,23 @@
+---
+// Optional: You can define properties for dynamic content if needed
+const {
+    message = "Le site est en construction. Certaines fonctionnalités peuvent ne pas être disponibles.",
+} = Astro.props;
+---
+
+<div class="alert">
+    <p>
+        <span style="color: red; font-weight: bold;">Alerte :</span>
+        {message}
+    </p>
+</div>
+
+<style>
+    .alert {
+        background-color: #ffcc00;
+        color: #333;
+        padding: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>

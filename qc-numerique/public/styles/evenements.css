@@ -1,0 +1,91 @@
+/* Global Styles */
+:root {
+    --primary-color: #004080;
+    --secondary-color: #f4f4f9;
+    --accent-color: #ff6600;
+    --text-color: #333;
+    --header-height: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* This centers the container */
+    padding: 20px;
+    text-align: center;
+    /* This centers text inside the container */
+}
+
+header.events-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header.events-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header.events-header p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+main.events-main {
+    padding: 40px 0;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Center text inside event cards */
+}
+
+.event-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.event-btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.event-btn:hover {
+    background-color: #e64a19;
+}
+
+footer.events-footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer.events-footer p {
+    font-size: 1rem;
+}

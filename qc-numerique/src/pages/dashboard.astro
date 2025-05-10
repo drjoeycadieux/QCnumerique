@@ -1,0 +1,54 @@
+---
+// No frontmatter needed for this static dashboard
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dashboard | Quebec Numérique</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/styles/dashboard.css" />
+    </head>
+    <body>
+        <header class="dashboard-header">
+            <h1>Bienvenue, utilisateur 👋</h1>
+            <button id="logout-btn">Se déconnecter</button>
+        </header>
+
+        <main class="dashboard-main">
+            <section class="card">
+                <h2>Événements</h2>
+                <p>
+                    Explorez les événements technologiques organisés à travers
+                    le Québec.
+                </p>
+                <a href="#">Voir les événements →</a>
+            </section>
+
+            <section class="card">
+                <h2>Communauté</h2>
+                <p>
+                    Rejoignez notre communauté pour collaborer, apprendre et
+                    partager.
+                </p>
+                <a href="#">Rejoindre le Slack →</a>
+            </section>
+
+            <section class="card">
+                <h2>Ressources</h2>
+                <p>
+                    Accédez à nos guides, vidéos, et documents pour soutenir
+                    votre parcours numérique.
+                </p>
+                <a href="#">Voir les ressources →</a>
+            </section>
+        </main>
+
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 Québec Numérique. Tous droits réservés.</p>
+        </footer>
+
+        <script type="module" src="../../public/script/auth-check.ts"></script>
+        <script type="module" src="../../public/script/dashboard.ts"></script>
+    </body>
+</html>
