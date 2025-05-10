@@ -11,5 +11,8 @@
   "dependencies": {
     "astro": "^5.7.12",
     "firebase": "^11.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
